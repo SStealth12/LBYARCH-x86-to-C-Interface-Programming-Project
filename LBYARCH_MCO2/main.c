@@ -48,8 +48,9 @@ int main() {
 		// stop timer
 		QueryPerformanceCounter(&t2);
 
-		// compute and print the elapsed time in millisec
+		// compute and print the elapsed time in 
 		elapsedTime = (t2.QuadPart - t1.QuadPart) * 1000.0 / frequency.QuadPart;
+		printf("Iteration %d\n", i+1);
 		printf("[C Output] Dot Product = %f\n", sdot[0]);
 		printf("[C Output] Running Time = %f ms\n\n", elapsedTime);
 
