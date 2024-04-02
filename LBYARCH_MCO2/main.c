@@ -67,6 +67,14 @@ int main() {
 		printf("[ASM Output] Dot Product = %f\n", sdot[1]);
 		printf("[ASM Output] Running Time = %f ms\n\n", elapsedTime);
 
+		if (sdot[0] == sdot[1]) {
+			printf("C output is Correct!\n");
+			printf("ASM output is Correct!\n\n");
+		}
+		else {
+			printf("ASM output is incorrect.\n\n");
+		}
+
 		ASM_avg += elapsedTime;
 
 	}
